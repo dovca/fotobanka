@@ -9,8 +9,8 @@
           autoplay
       >
         <SwiperSlide v-for="image in homepageImages" :key="image">
-          <div class="relative w-full h-[calc(100dvh-40px)] ">
-            <NuxtImg :src="image" sizes="600px" class="absolute block size-full object-cover" />
+          <div class="relative w-full h-[calc(100dvh-40px)]">
+            <NuxtImg :src="image" sizes="1400" class="absolute block size-full object-cover" />
           </div>
         </SwiperSlide>
       </Swiper>
