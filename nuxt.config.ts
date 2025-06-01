@@ -10,6 +10,11 @@ export default defineNuxtConfig({
 			theme: {
 				fontFamily: {
 					display: ['Helvetica', 'sans-serif'],
+				},
+				extend: {
+					screens: {
+						'3xl': '1920px',
+					}
 				}
 			}
 		}

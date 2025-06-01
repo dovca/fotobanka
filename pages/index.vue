@@ -1,6 +1,6 @@
 <template>
   <AppHeader />
-  <main class="container mx-auto">
+  <main>
     <div class="isolate relative">
       <Swiper
           :modules="[Autoplay]"
@@ -16,7 +16,7 @@
       </Swiper>
       <NuxtImg src="/img/watermark/WATERMARK 2.png" class="absolute top-0 z-10 block size-full object-cover" />
     </div>
-    <div class="space-y-10 mt-10">
+    <div class="container mx-auto space-y-10 mt-10">
       <CategorySection v-for="category in categories" :key="category.slug" :category />
     </div>
   </main>
