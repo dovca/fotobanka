@@ -1,21 +1,20 @@
 <template>
-  <div :style="{'--color': categoryData.color}">
+  <div :style="{'--theme-color': categoryData.themeColor, '--text-color': categoryData.textColor}">
     <AppHeader>
-      <h1 class="uppercase text-[color:--color]">
+      <h1 class="uppercase text-[color:--theme-color]">
         {{ categoryData.title }}
       </h1>
     </AppHeader>
-    <main class="container mx-auto mt-10">
-      <div class="grid grid-cols-12 mt-10">
+    <main class="container mx-auto my-10">
+      <div class="grid grid-cols-6 mt-10">
         <div class="relative group cursor-pointer" v-for="image in gallery" :key="image" @click="showDialog(image)">
-          <NuxtImg :src="image" sizes="100px" class="object-contain" />
-          <NuxtImg :src="watermarkSrc" class="absolute inset-0 size-full object-contain" />
-          <div class="absolute inset-0 bg-[--color] opacity-0 group-hover:opacity-50" />
+          <NuxtImg :src="image" sizes="300px" class="object-contain w-full" />
+          <div class="absolute inset-0 bg-[color:--theme-color] opacity-0 group-hover:opacity-50" />
         </div>
       </div>
 
-      <div class="flex flex-wrap gap-1 justify-center max-w-[45ch] mt-32">
-        <NuxtLink v-for="tag in tags" :key="tag" to="#" class="rounded-full border border-black px-1">
+      <div class="flex flex-wrap gap-1 max-w-[45ch] mt-32 text-[color:--text-color]">
+        <NuxtLink v-for="tag in categoryData.tags" :key="tag" to="#" class="rounded-full bg-[color:--theme-color] px-2">
           {{ tag }}
         </NuxtLink>
       </div>
@@ -38,8 +37,7 @@
 </template>
 
 <script setup lang="ts">
-  import slugs from '~~/config/slugs.json';
-  import tags from '~~/config/tags.json';
+  import slugs from '~/config/categories.json';
 
   const route = useRoute();
 
