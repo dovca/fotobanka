@@ -10,11 +10,11 @@
       >
         <SwiperSlide v-for="image in homepageImages" :key="image">
           <div class="relative w-full h-[calc(100dvh-40px)]">
-            <NuxtImg :src="image" sizes="1400" class="absolute block size-full object-cover" />
+            <NuxtImg :src="image" class="absolute block size-full object-cover" />
           </div>
         </SwiperSlide>
       </Swiper>
-      <NuxtImg src="/img/watermark/WATERMARK 2.png" class="absolute top-0 z-10 block size-full object-cover" />
+      <span class="absolute z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 inline-block uppercase text-[length:6rem] 2xl:text-[length:10rem] opacity-30">Fotobanka<sup class="text-[length:0.6em]">TM</sup></span>
     </div>
     <div class="container mx-auto space-y-10 mt-10">
       <CategorySection v-for="category in categories" :key="category.slug" :category />
