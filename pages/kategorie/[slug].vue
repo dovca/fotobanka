@@ -29,7 +29,7 @@
             <NuxtImg :src="cycleList.state.value" sizes="600px" class="absolute inset-0 size-full object-contain" />
             <NuxtImg :src="watermarkSrc" class="absolute inset-0 size-full object-contain" />
           </div>
-          <button class="border border-black rounded-full bg-white px-1" @click="download(cycleList.state.value)">Stáhnout</button>
+          <button class="border border-black rounded-full bg-white px-2" @click="download(cycleList.state.value)">Stáhnout</button>
         </div>
       </div>
       <button class="absolute top-1/2 left-8 -translate-y-1/2 text-white" @click="cycleList.prev()">

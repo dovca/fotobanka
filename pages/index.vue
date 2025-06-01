@@ -14,7 +14,7 @@
           </div>
         </SwiperSlide>
       </Swiper>
-      <span class="absolute z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 inline-block uppercase text-[length:6rem] 2xl:text-[length:10rem] opacity-30">Fotobanka<sup class="text-[length:0.6em]">TM</sup></span>
+      <span class="absolute z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 inline-block uppercase text-[length:8rem] 2xl:text-[length:12rem] opacity-30">Fotobanka<sup class="text-[length:0.6em]">TM</sup></span>
     </div>
     <div class="container mx-auto space-y-10 mt-10">
       <CategorySection v-for="category in categories" :key="category.slug" :category />
