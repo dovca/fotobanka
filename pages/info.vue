@@ -23,8 +23,10 @@
       <p class="mt-8 uppercase leading-tight">
         TĚŠTE SE JIŽ BRZY NA DALŠÍ NOVINKY ;-)
       </p>
-      <p class="mt-auto opacity-30">
+      <p class="mt-auto opacity-30 uppercase">
         LS 2025 – UMPRUM – GDNM
+        <br>
+        foto &copy; Jan Merc
       </p>
     </main>
   </div>
